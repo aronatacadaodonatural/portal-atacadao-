@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Se acessar exatamente a raiz '/', carrega dist/index.html
+  RewriteRule ^$ dist/index.html [L]
+
+  # Se não for um arquivo ou pasta física da raiz, redireciona para dentro da pasta dist/
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ dist/$1 [L]
+</IfModule>
+
+# Tipos MIME para Hostinger / LiteSpeed / Apache
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType text/css .css
+</IfModule>
