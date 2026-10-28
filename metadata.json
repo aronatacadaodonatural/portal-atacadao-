@@ -2,5 +2,7 @@
   "name": "Portal Corporativo - Atacadao do Natural",
   "description": "A premium corporate portal for operational management, featuring tool integration, search functionality, and a secure restricted area.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
