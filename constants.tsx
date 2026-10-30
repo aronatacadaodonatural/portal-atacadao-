@@ -76,6 +76,14 @@ export const TOOLS: Tool[] = [
     description: 'Criação e impressão de etiquetas de gôndola e placas de oferta personalizadas.',
     status: 'active'
   },
+  {
+    id: '9',
+    title: 'Gerador de Etiquetas de Embalagens',
+    category: 'Operacional',
+    url: 'https://gerador-etiquetas-embalagens.vercel.app/',
+    description: 'Criação e impressão de etiquetas personalizadas para embalagens e identificação de produtos.',
+    status: 'active'
+  },
 ];
 
 export const getToolIcon = (categoryId: string) => {
